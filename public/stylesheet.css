@@ -34,9 +34,9 @@ body{
     border: 0px;
     background: #F1F3F6;
     border-radius: 18px;
-    border: 2px solid rgb(var(--color));
+    border: 2px solid rgb(var(--primary));
     transition: all .25s ease;
-    opacity: .2;
+    opacity: .8;
 }
 .con-input input:focus{
     opacity: 1;
@@ -49,9 +49,10 @@ body{
     width: 100%;
 }
 .btn-login{
-    background: rgb(var(--color));
+    background: rgb(var(--primary));
     color: #fff;
     border: 0px;
+    border: 2px solid rgb(var(--primary));
     padding: 14px 20px;
     border-radius: 18px;
     width: 100%;
