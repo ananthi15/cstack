@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet'type="text/css"  href='../public/stylesheet.css' />
+  </head>
+  <body>
+    <div class="con-login">
+        <h1>Register</h1>
+        <div class="con-inputs">
+            <div class="con-input">
+                <label for="name">User Name</label>
+                <input placeholder="User name" id="name" type="text" required autofocus>
+            </div>
+            <div class="con-input">
+                <label for="email">Email</label>
+                <input placeholder="name@domain.com" id="email" type="text" required>
+            </div>
+            <div class="con-input">
+                <label for="password">Password</label>
+                <input id="password" type="password" required>
+            </div>
+            <div class="con-loginsnip">
+              <a href="/">Login</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <button class="btn-login" onclick="window.location.href='/'">Register</button>
+    </footer>
+
+    
+  </body>
+</html>
