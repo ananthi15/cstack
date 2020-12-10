@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
 body{
+    display: flex;
+     width: 100%;
     --primary: 237,73,86;
     --color:44,62,88;
 }
@@ -30,7 +37,7 @@ body{
 }
 .con-input input{
     width: 100%;
-    padding: 14px 20px;
+    padding: 14px 30px;
     border: 0px;
     background: #F1F3F6;
     border-radius: 18px;
@@ -47,21 +54,116 @@ body{
 }
 .con-login footer{
     width: 100%;
+    padding: 14px 30px;
 }
 .btn-login{
     background: rgb(var(--primary));
     color: #fff;
-    border: 0px;
-    border: 2px solid rgb(var(--primary));
-    padding: 14px 20px;
+    padding: 14px 30px;
     border-radius: 18px;
     width: 100%;
     display: block;
     cursor: pointer;
     font-size: 1.1rem;
+    border: 2px solid rgb(var(--primary));
     transition: all .25s ease;
 }
 .btn-login:hover{
     transform: translate(0,-10px);
     box-shadow: 0px 10px 30px 0px rgb(var(--primary),.4);
+}
+.container{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+}
+.container .card{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 30px;
+}
+.content-1{
+    position: relative;
+    width: 100%;
+    height: 35%;
+    background-image: linear-gradient(to bottom right,#0a52af,#1270ea);
+}
+.content-1::after{
+    content: 'CStack';
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    font-size: 5.5rem;
+    font-family: fantasy ;
+    font-weight:800;
+    color: #c1d4ec34;
+    -webkit-text-fill-color: rgba(49, 108, 185, 0.231);
+    -webkit-text-stroke-width:2px;
+}
+.content-1 .arrow-left{
+    position: absolute;
+    top:8%;
+    right:6%;
+    color: #dac7c7;
+    font-size: 15px;
+    cursor: pointer;
+}
+.branding span{
+    position: relative;
+    top: 5%;
+    font-size: 20px;
+    font-weight: 500; 
+}
+.branding h4{
+    top: 3%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.inn {
+    padding-top: 25px;
+}
+.onn {
+    box-sizing: content-box;
+    margin: 0;
+    width: 300px;
+}
+.list {
+    display: inline-block;
+    height: 84px;
+    list-style-type: none;
+    padding: 6px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    vertical-align: top;
+    width: 84px;
+}
+.line {
+    border-bottom: 1px solid #000000;
+    display: block;
+    left: 0;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    position: relative;
+    width: 100%;
+    size: 80px;
+    opacity: .2;
+}
+.content-2{
+    position: absolute;
+    left: 5%;
+}
+
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  }
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }

@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/cstack')
+mongoose.connect('mongodb://localhost/cstack',{useNewUrlParser:true,useUnifiedTopology:true})
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
@@ -14,6 +14,7 @@ var login = require('./routes/login');
 var register= require('./routes/register');
 //var users = require('./routes/users');
 var main = require('./routes/main');
+const { setTimeout } = require('timers');
 
 var app = express();
 
